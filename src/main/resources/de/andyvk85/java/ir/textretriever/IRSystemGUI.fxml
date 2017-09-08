@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.andyvk85.java.ir.textretriever.IRSystemGUI">
+<children>
+    <Button fx:id="setDocFolderBtn" layoutX="38.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleDocFolder" text="set doc folder" />
+    <Label fx:id="docFolderLbl" layoutX="163.0" layoutY="63.0" />
+    <Label layoutX="38.0" layoutY="98.0" text="search results:" />
+    <TextField fx:id="searchLimitTf" layoutX="163.0" layoutY="93.0" prefHeight="25.0" prefWidth="71.0" text="20" />
+    <Button fx:id="startIndexingBtn" layoutX="180.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleIndexing" text="start indexing" />
+    <TextField fx:id="searchQueryTf" layoutX="163.0" layoutY="137.0" prefHeight="25.0" prefWidth="273.0" />
+    <Label layoutX="38.0" layoutY="142.0" text="search query:" />
+    <Label layoutX="40.0" layoutY="63.0" text="document folder:" />
+    <Button fx:id="searchBtn" layoutX="456.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleSearch" text="search" />
+    <Label fx:id="wasIndexedLbl" layoutX="308.0" layoutY="19.0" />
+    <ListView fx:id="resultsLV" layoutX="37.0" layoutY="181.0" prefHeight="298.0" prefWidth="1117.0" />
+    <Label layoutX="40.0" layoutY="504.0" text="rank:" />
+    <Label layoutX="40.0" layoutY="530.0" text="score:" />
+    <Label layoutX="199.0" layoutY="504.0" text="last modified:" />
+    <Label fx:id="rankLbl" layoutX="92.0" layoutY="504.0" text="..." />
+    <Label fx:id="scoreLbl" layoutX="92.0" layoutY="530.0" text="..." />
+    <Label fx:id="lastModifiedLbl" layoutX="300.0" layoutY="504.0" text="..." />
+</children>
+</AnchorPane>
